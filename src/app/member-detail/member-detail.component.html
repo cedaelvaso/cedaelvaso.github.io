@@ -1,3 +1,6 @@
 <p>
   member-detail works! I'm {{member.name}}!
 </p>
+<p *ngFor="let link of member.linkList">
+  <a href="{{link.url}}">{{link.hint}}</a>
+</p>
