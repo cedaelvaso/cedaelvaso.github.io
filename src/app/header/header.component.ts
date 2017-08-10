@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit, Input} from '@angular/core';
 
 @Component({
   selector: 'app-header',
@@ -9,6 +9,7 @@ export class HeaderComponent implements OnInit {
 
   fullImagePath: String = 'assets/images/header.png';
 
+  @Input() inConstruction: boolean = false;
   constructor() { }
 
   ngOnInit() {

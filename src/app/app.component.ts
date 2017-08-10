@@ -8,7 +8,8 @@ import {Link} from "./shared/link";
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'app';
+  title: String = 'Ceda el Vaso';
+  inConstruction: boolean = true;
   memberList: Array<Member> = [
     new Member("Berto"),
     new Member("Edu"),
