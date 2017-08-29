@@ -22,10 +22,8 @@ export class MemberGridComponent implements OnInit {
       return 1;
     } else if (this.widthScreen < 991) {
       return 3;
-    } else if (this.widthScreen < 1199) {
-      return 4;
     } else {
-      return 5;
+      return 4;
     }
   }
 
