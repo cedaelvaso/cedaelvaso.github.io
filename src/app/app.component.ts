@@ -1,7 +1,6 @@
 import {Component} from '@angular/core';
 import {Member} from "./shared/member";
 import {Link} from "./shared/link";
-import {Angulartics2GoogleAnalytics} from "angulartics2";
 
 @Component({
   selector: 'app-root',
@@ -93,6 +92,4 @@ export class AppComponent {
         new Link("https://instagram.com/garciparedes", "Instagram"),
       ]),
   ];
-  constructor(angulartics2GoogleAnalytics: Angulartics2GoogleAnalytics) {}
-
 }
