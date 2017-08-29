@@ -13,14 +13,14 @@ export class MemberGridComponent implements OnInit {
   constructor() {
   }
 
-  get widthScreen(): Number {
+  static get widthScreen(): Number {
     return window.screen.width;
   }
 
   get numCols(): Number {
-    if (this.widthScreen < 767) {
+    if (MemberGridComponent.widthScreen < 767) {
       return 1;
-    } else if (this.widthScreen < 991) {
+    } else if (MemberGridComponent.widthScreen < 991) {
       return 3;
     } else {
       return 4;
