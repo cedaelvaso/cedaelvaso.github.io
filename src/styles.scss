@@ -1,0 +1,11 @@
+/* You can add global styles to this file, and also import other style files */
+@import "./cedaelvaso-theme";
+
+$primary: #424242;
+$accent: #ffd54f;
+
+body {
+  margin: 0;
+  background-color: $accent;
+}
+
