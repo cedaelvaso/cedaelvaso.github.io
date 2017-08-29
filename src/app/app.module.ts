@@ -15,6 +15,8 @@ import {MapComponent} from './map/map.component';
 import {ContactComponent} from './contact/contact.component';
 import {ToolbarComponent} from './toolbar/toolbar.component';
 import {MainContainerComponent} from './shared/main-container/main-container.component';
+import {Angulartics2GoogleAnalytics, Angulartics2Module} from "angulartics2";
+import {RouterModule} from "@angular/router";
 
 @NgModule({
   declarations: [
@@ -30,11 +32,13 @@ import {MainContainerComponent} from './shared/main-container/main-container.com
   ],
   imports: [
     BrowserModule,
+    RouterModule.forRoot([]),
     NoopAnimationsModule,
     MdToolbarModule,
     MdButtonModule,
     MdGridListModule,
     MdCardModule,
+    Angulartics2Module.forRoot([Angulartics2GoogleAnalytics]),
   ],
   providers: [],
   bootstrap: [AppComponent]
