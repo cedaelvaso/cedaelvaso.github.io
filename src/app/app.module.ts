@@ -4,7 +4,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
 import { NoopAnimationsModule } from "@angular/platform-browser/animations";
-import { MdButtonModule, MdToolbarModule } from "@angular/material";
+import {MdButtonModule, MdCardModule, MdGridListModule, MdToolbarModule} from "@angular/material";
 
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
@@ -33,6 +33,8 @@ import { MainContainerComponent } from './shared/main-container/main-container.c
     NoopAnimationsModule,
     MdToolbarModule,
     MdButtonModule,
+    MdGridListModule,
+    MdCardModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

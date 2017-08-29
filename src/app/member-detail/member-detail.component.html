@@ -1,6 +1,9 @@
-<p>
-  member-detail works! I'm {{member.name}}!
-</p>
-<p *ngFor="let link of member.linkList">
-  <a href="{{link.url}}">{{link.hint}}</a>
-</p>
+<md-card class="member-card">
+  <md-card-header>
+    <md-card-title>{{member.name}}</md-card-title>
+  </md-card-header>
+  <img md-card-image class="member-image" [src]="profileImagePath">
+  <md-card-actions>
+    <a md-button *ngFor="let link of member.linkList" href="{{link.url}}">{{link.hint}}</a>
+  </md-card-actions>
+</md-card>
