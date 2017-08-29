@@ -1125,4 +1125,8 @@ body {
   margin: 0;
   background-color: #ffd54f; }
 
+.mat-card {
+  color: white;
+  background-color: #424242; }
+
 /*# sourceMappingURL=styles.css.map */
