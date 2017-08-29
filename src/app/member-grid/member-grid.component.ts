@@ -9,7 +9,24 @@ import {Member} from "../shared/member";
 export class MemberGridComponent implements OnInit {
 
   @Input() memberList: Array<Member>;
+
   constructor() {
+  }
+
+  get widthScreen(): Number {
+    return window.screen.width;
+  }
+
+  get numCols(): Number {
+    if (this.widthScreen < 767) {
+      return 1;
+    } else if (this.widthScreen < 991) {
+      return 3;
+    } else if (this.widthScreen < 1199) {
+      return 4;
+    } else {
+      return 5;
+    }
   }
 
   ngOnInit() {
