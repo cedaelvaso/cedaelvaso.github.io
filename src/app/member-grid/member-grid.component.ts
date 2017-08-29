@@ -1,4 +1,4 @@
-import {Component, OnInit, Input} from '@angular/core';
+import {Component, OnInit, Input, HostListener} from '@angular/core';
 import {Member} from "../shared/member";
 
 @Component({
@@ -10,24 +10,43 @@ export class MemberGridComponent implements OnInit {
 
   @Input() memberList: Array<Member>;
 
+  numCols: number = 1;
+  rowHeight: number = 400;
+
   constructor() {
   }
 
-  get widthScreen(): Number {
+  static get widthScreen(): number {
     return window.screen.width;
   }
 
-  get numCols(): Number {
-    if (this.widthScreen < 767) {
+  ngOnInit() {
+    this.updateGrid();
+  }
+
+  @HostListener('window:resize')
+  onResize() {
+    this.updateGrid();
+  }
+
+  updateGrid() {
+    this.numCols = MemberGridComponent.numColsByWidth;
+    this.rowHeight = (MemberGridComponent.widthScreen / this.numCols) * 1.5;
+    console.log(this.rowHeight);
+  }
+
+
+  private static get numColsByWidth(): number {
+    if (MemberGridComponent.widthScreen < 426) {
       return 1;
-    } else if (this.widthScreen < 991) {
+    } else if (MemberGridComponent.widthScreen < 769) {
+      return 2;
+    } else if (MemberGridComponent.widthScreen < 993) {
       return 3;
     } else {
       return 4;
     }
   }
 
-  ngOnInit() {
-  }
 
 }
