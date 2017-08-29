@@ -9,7 +9,10 @@ import {Member} from "../shared/member";
 export class MemberDetailComponent implements OnInit {
 
   @Input() member: Member;
-  constructor() { }
+  profileImagePath: String = "assets/images/profile.png";
+
+  constructor() {
+  }
 
   ngOnInit() {
   }
