@@ -1,3 +1,7 @@
 .member-card {
   height: 90%;
 }
+
+.member-card-title {
+  font-size: 20px;
+}

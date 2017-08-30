@@ -13,13 +13,13 @@ export class AppComponent {
   inConstruction: boolean = true;
   memberList: Array<Member> = [
     new Member("Berto",
-      'assets/img/profile-img/default-profile.png',
+      'assets/img/profile-img/alberto-profile.jpg',
       [
         new Link("https://facebook.com/garciparedes", "Facebook"),
         new Link("https://instagram.com/garciparedes", "Instagram"),
       ]),
     new Member("Edu",
-      'assets/img/profile-img/default-profile.png',
+      'assets/img/profile-img/eduardo-profile.jpg',
       [
         new Link("https://facebook.com/garciparedes", "Facebook"),
         new Link("https://instagram.com/garciparedes", "Instagram"),
@@ -43,7 +43,7 @@ export class AppComponent {
         new Link("https://instagram.com/garciparedes", "Instagram"),
       ]),
     new Member("Garcy",
-      'assets/img/profile-img/default-profile.png',
+      'assets/img/profile-img/garciparedes-profile.png',
       [
         new Link("https://facebook.com/garciparedes", "Facebook"),
         new Link("https://instagram.com/garciparedes", "Instagram"),
@@ -67,7 +67,7 @@ export class AppComponent {
         new Link("https://instagram.com/garciparedes", "Instagram"),
       ]),
     new Member("Mario",
-      'assets/img/profile-img/default-profile.png',
+      'assets/img/profile-img/mario-profile.jpg',
       [
         new Link("https://facebook.com/garciparedes", "Facebook"),
         new Link("https://instagram.com/garciparedes", "Instagram"),
@@ -79,19 +79,19 @@ export class AppComponent {
         new Link("https://instagram.com/garciparedes", "Instagram"),
       ]),
     new Member("Rome",
-      'assets/img/profile-img/default-profile.png',
+      'assets/img/profile-img/romero-profile.jpg',
       [
         new Link("https://facebook.com/garciparedes", "Facebook"),
         new Link("https://instagram.com/garciparedes", "Instagram"),
       ]),
     new Member("Santy",
-      'assets/img/profile-img/default-profile.png',
+      'assets/img/profile-img/santiago-profile.jpg',
       [
         new Link("https://facebook.com/garciparedes", "Facebook"),
         new Link("https://instagram.com/garciparedes", "Instagram"),
       ]),
     new Member("Soul",
-      'assets/img/profile-img/default-profile.png',
+      'assets/img/profile-img/soul-profile.jpg',
       [
         new Link("https://facebook.com/garciparedes", "Facebook"),
         new Link("https://instagram.com/garciparedes", "Instagram"),
