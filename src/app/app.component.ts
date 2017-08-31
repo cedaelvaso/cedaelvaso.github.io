@@ -125,7 +125,7 @@ export class AppComponent {
         new Link("https://instagram.com/garciparedes", "Instagram"),
         new Link("https://twitter.com/garciparedes", "Twitter"),
       ]),
-  ];
+  ].sort(() => (Math.random() - 0.5));
 
   socialList: Array<Link> = [
     new Link("https://www.facebook.com/CedaElVasoPDN/", "Facebook"),
