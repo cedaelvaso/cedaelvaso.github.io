@@ -1,5 +1,7 @@
 import {Component, OnInit, Input, HostListener} from '@angular/core';
 import {Member} from "../shared/member";
+import {Observable} from "rxjs/Observable";
+import {AppService} from "../app.service";
 
 @Component({
   selector: 'app-member-grid',
@@ -8,12 +10,13 @@ import {Member} from "../shared/member";
 })
 export class MemberGridComponent implements OnInit {
 
-  @Input() memberList: Array<Member>;
+  memberList: Observable<Array<Member>>;
 
   numCols: number = 1;
   rowHeight: number = 400;
 
-  constructor() {
+  constructor(private _appService: AppService) {
+    this.memberList = this._appService.memberList;
   }
 
   static get widthScreen(): number {

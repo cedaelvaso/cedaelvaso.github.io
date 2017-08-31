@@ -1,6 +1,6 @@
 <md-grid-list class="member-grid" cols="{{numCols}}" rowHeight="{{rowHeight + 'px'}}" gutterSize="10px">
   <md-grid-tile
-    *ngFor="let member of memberList"
+    *ngFor="let member of memberList | async"
     [colspan]="1"
     [rowspan]="1">
     <app-member-detail

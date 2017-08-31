@@ -1,4 +1,3 @@
-import {utils} from "protractor";
 
 /**
  * Created by garciparedes on 10/08/2017.

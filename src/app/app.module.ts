@@ -20,6 +20,8 @@ import {AngularFontAwesomeModule} from 'angular-font-awesome/angular-font-awesom
 import { SocialComponent } from './social/social.component';
 import { AgmCoreModule } from '@agm/core';
 import { FooterComponent } from './footer/footer.component';
+import {AppService} from "./app.service";
+import {HttpModule} from "@angular/http";
 
 @NgModule({
   declarations: [
@@ -36,6 +38,7 @@ import { FooterComponent } from './footer/footer.component';
   ],
   imports: [
     BrowserModule,
+    HttpModule,
     RouterModule.forRoot([]),
     NoopAnimationsModule,
     MdToolbarModule,
@@ -48,7 +51,9 @@ import { FooterComponent } from './footer/footer.component';
       apiKey: 'AIzaSyCcHBzgvSOZPDzLtywbJ7anG9qwdHAft0U'
     }),
   ],
-  providers: [],
+  providers: [
+    AppService,
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule {

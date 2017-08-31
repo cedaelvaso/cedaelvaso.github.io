@@ -1,5 +1,7 @@
-import {Component, Input, OnInit} from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 import {Link} from "../shared/link";
+import {AppService} from "../app.service";
+import {Observable} from "rxjs/Observable";
 
 @Component({
   selector: 'app-toolbar',
@@ -8,15 +10,18 @@ import {Link} from "../shared/link";
 })
 export class ToolbarComponent implements OnInit {
 
-  @Input() title: string;
-  @Input() socialList: Array<Link>;
-  constructor() {
+  title: Observable<string>;
+  socialList: Observable<Array<Link>>;
+
+  constructor(private _appService: AppService) {
+    this.title = _appService.title;
+    this.socialList = _appService.socialList;
   }
 
   ngOnInit() {
   }
 
   onClickTitle() {
-    window.scrollTo(0,0);
+    window.scrollTo(0, 0);
   }
 }

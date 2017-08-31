@@ -1,13 +1,14 @@
 <md-card class="ultra-wide-card">
   <md-card-header>
-    <md-card-title>{{cardTitle}}</md-card-title>
+    <md-card-title>{{(maps | async)?.mapsCardTitle}}</md-card-title>
   </md-card-header>
   <div role="button" md-card-image>
-    <a target="_blank" href="{{url}}" angulartics2On="click" angularticsEvent="MapClick"
+    <a target="_blank" href="{{(maps | async)?.directionsURL}}" angulartics2On="click" angularticsEvent="MapClick"
        angularticsCategory="Directions - Map" [angularticsProperties]="{label: 'Map'}">
-      <agm-map [latitude]="lat" [longitude]="lng" [gestureHandling]="'none'" [zoom]="14" [scrollwheel]="false"
+      <agm-map [latitude]="(maps | async)?.lat" [longitude]="(maps | async)?.lng" [gestureHandling]="'none'" [zoom]="14"
+               [scrollwheel]="false"
                [streetViewControl]="false">
-        <agm-marker [latitude]="lat" [longitude]="lng"></agm-marker>
+        <agm-marker [latitude]="(maps | async)?.lat" [longitude]="(maps | async)?.lng"></agm-marker>
       </agm-map>
     </a>
   </div>
