@@ -1,0 +1,25 @@
+{
+  "name": "Ceda el Vaso",
+  "inConstruction": false,
+  "socialList": [
+    {
+      "url": "https://www.facebook.com/CedaElVasoPDN/",
+      "hint": "Facebook"
+    },
+    {
+      "url": "https://twitter.com/cedaelvaso8",
+      "hint": "Twitter"
+    }
+  ],
+  "map": {
+    "lat": 42.1527386,
+    "lng": -4.6927241,
+    "mapsCardTitle": "¿Cómo llegar?",
+    "directionsURL": "https://www.google.com/maps/dir/?api=1&destination=Paredes+de+Nava"
+  },
+  "author": {
+    "name": "garciparedes",
+    "URL": "https://garciparedes.me"
+  }
+  "description": "description works!"
+}
