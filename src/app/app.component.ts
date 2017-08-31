@@ -54,7 +54,7 @@ export class AppComponent {
         new Link("https://instagram.com/garciparedes", "Instagram"),
         new Link("https://linkedin.com/in/garciparedes/en", "LinkedIn"),
         new Link("https://garciparedes.me", "Website", "home"),
-      ]),
+      ], "Website"),
     new Member("Hector",
       'assets/img/profile-img/default-profile.png',
       [
