@@ -1,5 +1,5 @@
 <md-grid-list class="social-grid" cols="2" rowHeight="72px">
-  <md-grid-tile *ngFor="let social of socialList">
+  <md-grid-tile *ngFor="let social of socialList | async">
     <a md-fab href="{{social.url}}" target="_blank"
        angulartics2On="click" angularticsEvent="SocialClick" angularticsCategory="{{ social.hint }}"
        [angularticsProperties]="{label: 'Social Buttons'}">

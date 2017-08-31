@@ -2,10 +2,10 @@
   <!-- This fills the remaining space of the current row -->
   <span>Copyright
     <fa name="copyright"></fa> -
-    <a href="{{authorURL}}" target="_blank" angulartics2On="click" angularticsEvent="AuthorClick"
-       angularticsCategory="{{authorName}}"
+    <a href="{{(author | async)?.url}}" target="_blank" angulartics2On="click" angularticsEvent="AuthorClick"
+       angularticsCategory="{{(author | async)?.name}}"
        [angularticsProperties]="{label: 'Footer'}">
-      {{authorName}}
+      {{(author | async)?.name}}
     </a> - {{currentYear}}
   </span>
 </md-toolbar>

@@ -1,5 +1,7 @@
 import {Component, Input, OnInit} from '@angular/core';
 import {Link} from "../shared/link";
+import {Observable} from "rxjs/Observable";
+import {AppService} from "../app.service";
 
 @Component({
   selector: 'app-social',
@@ -8,9 +10,10 @@ import {Link} from "../shared/link";
 })
 export class SocialComponent implements OnInit {
 
-  @Input() socialList: Array<Link> = [];
+  socialList: Observable<Array<Link>>;
 
-  constructor() {
+  constructor(private _appService: AppService) {
+    this.socialList = this._appService.socialList;
   }
 
   ngOnInit() {

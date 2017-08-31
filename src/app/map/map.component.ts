@@ -1,4 +1,7 @@
 import {Component, Input, OnInit} from '@angular/core';
+import {Observable} from "rxjs/Observable";
+import {Maps} from "../shared/maps";
+import {AppService} from "../app.service";
 
 @Component({
   selector: 'app-map',
@@ -7,13 +10,13 @@ import {Component, Input, OnInit} from '@angular/core';
 })
 export class MapComponent implements OnInit {
 
-  constructor() {
+  maps: Observable<Maps>;
+
+  constructor(private _appService: AppService) {
+    this.maps = this._appService.maps;
   }
 
-  @Input() lat: number;
-  @Input() lng: number;
-  @Input() cardTitle: string = "¿Cómo llegar?";
-  @Input() url: string;
+
 
   ngOnInit() {
   }

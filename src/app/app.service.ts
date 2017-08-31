@@ -45,18 +45,22 @@ export class AppService {
   }
 
   get maps(): Observable<Maps> {
-    return this.siteObservableJSON.map(site => site.maps);
+    return this.siteObservableJSON.map(site =>
+      new Maps(site.maps.lat, site.maps.lng, site.maps.mapsCardTitle, site.maps.directionsURL)
+    );
   }
 
   get author(): Observable<Author> {
-    return this.siteObservableJSON.map(site => site.author);
+    return this.siteObservableJSON.map(site =>
+      new Author(site.author.name, site.author.url)
+    );
   }
 
   get memberList(): Observable<Array<Member>> {
     return this.memberObservableJSON.map(memberList =>
       memberList.map(member =>
         new Member(
-          member.name, member.imageURL,
+          member.name, member.profileImageURL,
           member.linkList.map(link =>
             new Link(link.url, link.hint, link.iconId)),
           member.defaultLinkHint)))

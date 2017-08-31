@@ -1,4 +1,4 @@
 <img class="header-image" [src]="fullImagePath">
-<h2 *ngIf="inConstruction">
+<h2 *ngIf="inConstruction | async">
   In Construction...
 </h2>

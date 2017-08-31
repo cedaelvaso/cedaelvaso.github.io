@@ -1,4 +1,7 @@
-import {Component, Input, OnInit} from '@angular/core';
+import {Component, OnInit} from '@angular/core';
+import {Author} from "../shared/author";
+import {Observable} from "rxjs/Observable";
+import {AppService} from "../app.service";
 
 @Component({
   selector: 'app-footer',
@@ -7,9 +10,11 @@ import {Component, Input, OnInit} from '@angular/core';
 })
 export class FooterComponent implements OnInit {
 
-  @Input() authorName: string;
-  @Input() authorURL: string;
-  constructor() { }
+  author: Observable<Author>;
+
+  constructor(private _appService: AppService) {
+    this.author = _appService.author;
+  }
 
   ngOnInit() {
   }
