@@ -1,3 +1,6 @@
 .example-fill-remaining-space {
   flex: 1 1 auto;
 }
+.social-button {
+  min-width: 44px;
+}

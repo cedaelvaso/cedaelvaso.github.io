@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, Input, OnInit} from '@angular/core';
+import {Link} from "../shared/link";
 
 @Component({
   selector: 'app-toolbar',
@@ -7,9 +8,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ToolbarComponent implements OnInit {
 
-  constructor() { }
+  @Input() title: String;
+  @Input() socialList: Array<Link>;
+  constructor() {
+  }
 
   ngOnInit() {
   }
 
+  onClickTitle() {
+    window.scrollTo(0,0);
+  }
 }

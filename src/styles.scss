@@ -1,15 +1,15 @@
 /* You can add global styles to this file, and also import other style files */
 @import "./cedaelvaso-theme";
 
-$primary: #424242;
-$accent: #ffd54f;
+$primary: #ffd54f;
+$accent: #424242;
 
 body {
   margin: 0;
-  background-color: $accent;
+  background-color: $primary;
 }
 
 .mat-card {
   color: white;
-  background-color: $primary;
+  background-color: $accent;
 }
