@@ -1,7 +1,13 @@
 <md-card class="ultra-wide-card">
-  <md-card-content>
-    <p>
-      map works!
-    </p>
-  </md-card-content>
+  <md-card-header>
+    <md-card-title>{{mapTitle}}</md-card-title>
+  </md-card-header>
+  <div role="button" md-card-image>
+    <a target="_blank" href="{{directionsUrl}}">
+      <agm-map [latitude]="lat" [longitude]="lng" [gestureHandling]="'none'" [zoom]="14" [scrollwheel]="false"
+               [streetViewControl]="false">
+        <agm-marker [latitude]="lat" [longitude]="lng"></agm-marker>
+      </agm-map>
+    </a>
+  </div>
 </md-card>

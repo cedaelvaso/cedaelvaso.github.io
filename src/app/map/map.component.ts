@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 
 @Component({
   selector: 'app-map',
@@ -7,7 +7,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MapComponent implements OnInit {
 
-  constructor() { }
+  constructor() {
+  }
+
+  lat: number = 42.1527386;
+  lng: number = -4.6927241;
+  mapTitle: string = "¿Cómo llegar?";
+  directionsUrl: string = "https://www.google.com/maps/dir/?api=1&destination=Paredes+de+Nava"
 
   ngOnInit() {
   }

@@ -18,6 +18,7 @@ import {Angulartics2GoogleAnalytics, Angulartics2Module} from "angulartics2";
 import {RouterModule} from "@angular/router";
 import {AngularFontAwesomeModule} from 'angular-font-awesome/angular-font-awesome';
 import { SocialComponent } from './social/social.component';
+import { AgmCoreModule } from '@agm/core';
 
 @NgModule({
   declarations: [
@@ -41,6 +42,9 @@ import { SocialComponent } from './social/social.component';
     MdCardModule,
     Angulartics2Module.forRoot([Angulartics2GoogleAnalytics]),
     AngularFontAwesomeModule,
+    AgmCoreModule.forRoot({
+      apiKey: 'AIzaSyCcHBzgvSOZPDzLtywbJ7anG9qwdHAft0U'
+    }),
   ],
   providers: [],
   bootstrap: [AppComponent]

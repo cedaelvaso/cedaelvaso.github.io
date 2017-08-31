@@ -8,7 +8,7 @@ import {Link} from "../shared/link";
 })
 export class ToolbarComponent implements OnInit {
 
-  @Input() title: String;
+  @Input() title: string;
   @Input() socialList: Array<Link>;
   constructor() {
   }

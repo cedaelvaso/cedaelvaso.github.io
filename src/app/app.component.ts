@@ -9,7 +9,7 @@ import {Angulartics2GoogleAnalytics} from "angulartics2";
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title: String = 'Ceda el Vaso';
+  title: string = 'Ceda el Vaso';
   inConstruction: boolean = false;
   memberList: Array<Member> = [
     new Member("Berto",

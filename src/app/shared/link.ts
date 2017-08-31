@@ -6,11 +6,11 @@ import {utils} from "protractor";
 
 export class Link {
 
-  url: String;
-  hint: String;
-  iconId: String;
+  url: string;
+  hint: string;
+  iconId: string;
 
-  constructor(url: String, hint: String, iconId?: String) {
+  constructor(url: string, hint: string, iconId?: string) {
     this.url = url;
     this.hint = hint;
     if (!iconId) {

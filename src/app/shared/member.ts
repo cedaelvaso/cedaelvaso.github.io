@@ -5,12 +5,12 @@ import {Link} from "./link";
  */
 
 export class Member {
-  name: String;
-  profileImageURL: String;
+  name: string;
+  profileImageURL: string;
   linkList: Array<Link>;
-  defaultLinkHint: String;
+  defaultLinkHint: string;
 
-  constructor(name: String, imageURL?: String, linkList: Array<Link> = [], defaultLinkHint?: String) {
+  constructor(name: string, imageURL?: string, linkList: Array<Link> = [], defaultLinkHint?: string) {
     this.name = name;
     this.profileImageURL = imageURL;
     this.linkList = linkList.sort((a, b) =>
