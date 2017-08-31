@@ -4,7 +4,9 @@
   <!-- This fills the remaining space of the current row -->
   <span class="example-fill-remaining-space"></span>
 
-  <a class="social-button" md-button *ngFor="let social of socialList" href="{{social.url}}" target="_blank">
+  <a class="social-button" md-button *ngFor="let social of socialList" href="{{social.url}}" target="_blank"
+     angulartics2On="click" angularticsEvent="SocialClick" angularticsCategory="{{ social.hint }}"
+     [angularticsProperties]="{label: 'Toolbar'}">
     <fa name="{{social.iconId}}"></fa>
   </a>
 </md-toolbar>
