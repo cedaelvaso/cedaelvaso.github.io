@@ -17,35 +17,35 @@ export class AppComponent {
       [
         new Link("https://facebook.com/garciparedes", "Facebook"),
         new Link("https://instagram.com/garciparedes", "Instagram"),
-        new Link("https://twitter/garciparedes", "Twitter"),
+        new Link("https://twitter.com/garciparedes", "Twitter"),
       ]),
     new Member("Edu",
       'assets/img/profile-img/eduardo-profile.jpg',
       [
         new Link("https://facebook.com/garciparedes", "Facebook"),
         new Link("https://instagram.com/garciparedes", "Instagram"),
-        new Link("https://twitter/garciparedes", "Twitter"),
+        new Link("https://twitter.com/garciparedes", "Twitter"),
       ]),
     new Member("Emi",
       'assets/img/profile-img/default-profile.png',
       [
         new Link("https://facebook.com/garciparedes", "Facebook"),
         new Link("https://instagram.com/garciparedes", "Instagram"),
-        new Link("https://twitter/garciparedes", "Twitter"),
+        new Link("https://twitter.com/garciparedes", "Twitter"),
       ]),
     new Member("Fernando",
       'assets/img/profile-img/default-profile.png',
       [
         new Link("https://facebook.com/garciparedes", "Facebook"),
         new Link("https://instagram.com/garciparedes", "Instagram"),
-        new Link("https://twitter/garciparedes", "Twitter"),
+        new Link("https://twitter.com/garciparedes", "Twitter"),
       ]),
     new Member("Gamby",
       'assets/img/profile-img/default-profile.png',
       [
         new Link("https://facebook.com/garciparedes", "Facebook"),
         new Link("https://instagram.com/garciparedes", "Instagram"),
-        new Link("https://twitter/garciparedes", "Twitter"),
+        new Link("https://twitter.com/garciparedes", "Twitter"),
       ]),
     new Member("Garcy",
       'assets/img/profile-img/garciparedes-profile.png',
@@ -60,70 +60,70 @@ export class AppComponent {
       [
         new Link("https://facebook.com/garciparedes", "Facebook"),
         new Link("https://instagram.com/garciparedes", "Instagram"),
-        new Link("https://twitter/garciparedes", "Twitter"),
+        new Link("https://twitter.com/garciparedes", "Twitter"),
       ]),
     new Member("Jorgito",
       'assets/img/profile-img/default-profile.png',
       [
         new Link("https://facebook.com/garciparedes", "Facebook"),
         new Link("https://instagram.com/garciparedes", "Instagram"),
-        new Link("https://twitter/garciparedes", "Twitter"),
+        new Link("https://twitter.com/garciparedes", "Twitter"),
       ]),
     new Member("Juan",
       'assets/img/profile-img/default-profile.png',
       [
         new Link("https://facebook.com/garciparedes", "Facebook"),
         new Link("https://instagram.com/garciparedes", "Instagram"),
-        new Link("https://twitter/garciparedes", "Twitter"),
+        new Link("https://twitter.com/garciparedes", "Twitter"),
       ]),
     new Member("Mario",
       'assets/img/profile-img/mario-profile.jpg',
       [
         new Link("https://facebook.com/garciparedes", "Facebook"),
         new Link("https://instagram.com/garciparedes", "Instagram"),
-        new Link("https://twitter/garciparedes", "Twitter"),
+        new Link("https://twitter.com/garciparedes", "Twitter"),
       ]),
     new Member("Rivas",
       'assets/img/profile-img/default-profile.png',
       [
         new Link("https://facebook.com/garciparedes", "Facebook"),
         new Link("https://instagram.com/garciparedes", "Instagram"),
-        new Link("https://twitter/garciparedes", "Twitter"),
+        new Link("https://twitter.com/garciparedes", "Twitter"),
       ]),
     new Member("Rome",
       'assets/img/profile-img/romero-profile.jpg',
       [
         new Link("https://facebook.com/garciparedes", "Facebook"),
         new Link("https://instagram.com/garciparedes", "Instagram"),
-        new Link("https://twitter/garciparedes", "Twitter"),
+        new Link("https://twitter.com/garciparedes", "Twitter"),
       ]),
     new Member("Santy",
       'assets/img/profile-img/santiago-profile.jpg',
       [
         new Link("https://facebook.com/garciparedes", "Facebook"),
         new Link("https://instagram.com/garciparedes", "Instagram"),
-        new Link("https://twitter/garciparedes", "Twitter"),
+        new Link("https://twitter.com/garciparedes", "Twitter"),
       ]),
     new Member("Soul",
       'assets/img/profile-img/soul-profile.jpg',
       [
         new Link("https://facebook.com/garciparedes", "Facebook"),
         new Link("https://instagram.com/garciparedes", "Instagram"),
-        new Link("https://twitter/garciparedes", "Twitter"),
+        new Link("https://twitter.com/garciparedes", "Twitter"),
       ]),
     new Member("Yimi",
       'assets/img/profile-img/default-profile.png',
       [
         new Link("https://facebook.com/garciparedes", "Facebook"),
         new Link("https://instagram.com/garciparedes", "Instagram"),
-        new Link("https://twitter/garciparedes", "Twitter"),
+        new Link("https://twitter.com/garciparedes", "Twitter"),
       ]),
     new Member("Vitu",
       'assets/img/profile-img/default-profile.png',
       [
         new Link("https://facebook.com/garciparedes", "Facebook"),
         new Link("https://instagram.com/garciparedes", "Instagram"),
-        new Link("https://twitter/garciparedes", "Twitter"),
+        new Link("https://twitter.com/garciparedes", "Twitter"),
       ]),
   ];
 
@@ -137,6 +137,8 @@ export class AppComponent {
   mapsCardTitle: string = "¿Cómo llegar?";
   directionsURL: string = "https://www.google.com/maps/dir/?api=1&destination=Paredes+de+Nava"
 
+  authorName: string = "garciparedes";
+  authorURL: string = "https://garciparedes.me";
 
   constructor(angulartics2GoogleAnalytics: Angulartics2GoogleAnalytics) {
   }

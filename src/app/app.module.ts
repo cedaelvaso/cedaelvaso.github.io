@@ -19,6 +19,7 @@ import {RouterModule} from "@angular/router";
 import {AngularFontAwesomeModule} from 'angular-font-awesome/angular-font-awesome';
 import { SocialComponent } from './social/social.component';
 import { AgmCoreModule } from '@agm/core';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -30,7 +31,8 @@ import { AgmCoreModule } from '@agm/core';
     MapComponent,
     ToolbarComponent,
     MainContainerComponent,
-    SocialComponent
+    SocialComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
