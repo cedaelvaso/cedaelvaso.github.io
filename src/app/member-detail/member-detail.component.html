@@ -1,5 +1,5 @@
 <a target="_blank" href="{{member.defaultLink.url}}" angulartics2On="click" angularticsEvent="MemberClick"
-   angularticsCategory="{{ member.name }}"
+   angularticsCategory="{{'Member - ' + member.name }}"
    [angularticsProperties]="{label: 'Member Card'}">
   <md-card class="member-card">
     <md-card-header>
@@ -8,8 +8,9 @@
     <img md-card-image class="member-image" [src]="member.profileImageURL">
     <md-card-actions class="member-card-social">
       <a md-button class="member-card-social-link" *ngFor="let link of member.linkList" href="{{link.url}}"
-         target="_blank" angulartics2On="click" angularticsEvent="MemberClick" angularticsCategory="{{ member.name }}"
-         [angularticsProperties]="{label: link.hint}">
+         target="_blank" angulartics2On="click" angularticsEvent="MemberClick"
+         angularticsCategory="{{ 'Member - ' + member.name  }}"
+         [angularticsProperties]="{label: 'Member Card - '+ link.hint}">
         <fa name="{{link.iconId}}"></fa>
       </a>
     </md-card-actions>

@@ -3,7 +3,7 @@
   <span>Copyright
     <fa name="copyright"></fa> -
     <a href="{{authorURL}}" target="_blank" angulartics2On="click" angularticsEvent="AuthorClick"
-       angularticsCategory="{{authorName}}"
+       angularticsCategory="{{'Author - ' + authorName}}"
        [angularticsProperties]="{label: 'Footer'}">
       {{authorName}}
     </a> - {{currentYear}}
