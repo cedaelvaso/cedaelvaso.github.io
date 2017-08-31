@@ -9,7 +9,6 @@ import {Member} from "../shared/member";
 export class MemberDetailComponent implements OnInit {
 
   @Input() member: Member;
-  profileImagePath: String = "assets/images/profile.png";
 
   constructor() {
   }
