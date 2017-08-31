@@ -11,7 +11,7 @@
       "hint": "Twitter"
     }
   ],
-  "map": {
+  "maps": {
     "lat": 42.1527386,
     "lng": -4.6927241,
     "mapsCardTitle": "¿Cómo llegar?",
@@ -19,7 +19,7 @@
   },
   "author": {
     "name": "garciparedes",
-    "URL": "https://garciparedes.me"
+    "url": "https://garciparedes.me"
   }
   "description": "description works!"
 }
