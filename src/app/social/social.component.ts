@@ -4,7 +4,7 @@ import {Link} from "../shared/link";
 @Component({
   selector: 'app-social',
   templateUrl: './social.component.html',
-  styleUrls: ['./social.component.css']
+  styleUrls: ['./social.component.scss']
 })
 export class SocialComponent implements OnInit {
 
