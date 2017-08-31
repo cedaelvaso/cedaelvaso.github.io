@@ -2,7 +2,9 @@
   <!-- This fills the remaining space of the current row -->
   <span>Copyright
     <fa name="copyright"></fa> -
-    <a href="{{authorURL}}" target="_blank">
+    <a href="{{authorURL}}" target="_blank" angulartics2On="click" angularticsEvent="AuthorClick"
+       angularticsCategory="{{authorName}}"
+       [angularticsProperties]="{label: 'Footer'}">
       {{authorName}}
     </a> - {{currentYear}}
   </span>
