@@ -12,7 +12,6 @@ import {MemberGridComponent} from './member-grid/member-grid.component';
 import {MemberDetailComponent} from './member-detail/member-detail.component';
 import {DescriptionComponent} from './description/description.component';
 import {MapComponent} from './map/map.component';
-import {ContactComponent} from './contact/contact.component';
 import {ToolbarComponent} from './toolbar/toolbar.component';
 import {MainContainerComponent} from './shared/main-container/main-container.component';
 import {Angulartics2GoogleAnalytics, Angulartics2Module} from "angulartics2";
@@ -27,7 +26,6 @@ import {AngularFontAwesomeModule} from 'angular-font-awesome/angular-font-awesom
     MemberDetailComponent,
     DescriptionComponent,
     MapComponent,
-    ContactComponent,
     ToolbarComponent,
     MainContainerComponent
   ],
