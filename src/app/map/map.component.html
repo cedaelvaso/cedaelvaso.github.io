@@ -4,7 +4,7 @@
   </md-card-header>
   <div role="button" md-card-image>
     <a target="_blank" href="{{(maps | async)?.directionsURL}}" angulartics2On="click" angularticsEvent="MapClick"
-       angularticsCategory="Directions" [angularticsProperties]="{label: 'Map'}">
+       angularticsCategory="Directions - Map" [angularticsProperties]="{label: 'Map'}">
       <agm-map [latitude]="(maps | async)?.lat" [longitude]="(maps | async)?.lng" [gestureHandling]="'none'" [zoom]="14"
                [scrollwheel]="false"
                [streetViewControl]="false">
