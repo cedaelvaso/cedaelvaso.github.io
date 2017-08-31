@@ -12,6 +12,6 @@ export class Member {
   constructor(name: String, imageURL?: String, linkList: Array<Link> = []) {
     this.name = name;
     this.profileImageURL = imageURL;
-    this.linkList = linkList;
+    this.linkList = linkList.sort((a, b) => a.hint.toLowerCase().localeCompare(b.hint.toLowerCase()));
   }
 }

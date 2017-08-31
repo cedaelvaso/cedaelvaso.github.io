@@ -5,3 +5,7 @@
 .member-card-title {
   font-size: 20px;
 }
+
+.member-card-social-link {
+  min-width: 44px;
+}

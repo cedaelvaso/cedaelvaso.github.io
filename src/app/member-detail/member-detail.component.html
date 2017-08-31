@@ -4,6 +4,8 @@
   </md-card-header>
   <img md-card-image class="member-image" [src]="member.profileImageURL">
   <md-card-actions class="member-card-social">
-    <a md-button *ngFor="let link of member.linkList" href="{{link.url}}"><fa name="{{link.hint.toLowerCase()}}"></fa></a>
+    <a md-button class="member-card-social-link" *ngFor="let link of member.linkList" href="{{link.url}}">
+      <fa name="{{link.iconId}}"></fa>
+    </a>
   </md-card-actions>
 </md-card>

@@ -32,7 +32,6 @@ export class MemberGridComponent implements OnInit {
   updateGrid() {
     this.numCols = MemberGridComponent.numColsByWidth;
     this.rowHeight = (Math.min(MemberGridComponent.widthScreen, 960) / this.numCols) + 140;
-    console.log(this.rowHeight);
   }
 
 
