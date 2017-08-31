@@ -21,6 +21,7 @@ import { SocialComponent } from './social/social.component';
 import { AgmCoreModule } from '@agm/core';
 import { FooterComponent } from './footer/footer.component';
 import {AppService} from "./app.service";
+import {HttpModule} from "@angular/http";
 
 @NgModule({
   declarations: [
@@ -37,6 +38,7 @@ import {AppService} from "./app.service";
   ],
   imports: [
     BrowserModule,
+    HttpModule,
     RouterModule.forRoot([]),
     NoopAnimationsModule,
     MdToolbarModule,

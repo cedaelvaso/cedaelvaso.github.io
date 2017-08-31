@@ -1,5 +1,5 @@
 {
-  "name": "Ceda el Vaso",
+  "title": "Ceda el Vaso",
   "inConstruction": false,
   "socialList": [
     {
@@ -20,6 +20,6 @@
   "author": {
     "name": "garciparedes",
     "url": "https://garciparedes.me"
-  }
+  },
   "description": "description works!"
 }
