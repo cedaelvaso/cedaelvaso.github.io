@@ -132,6 +132,12 @@ export class AppComponent {
     new Link("https://twitter.com/cedaelvaso8", "Twitter")
   ];
 
+  lat: number = 42.1527386;
+  lng: number = -4.6927241;
+  mapsCardTitle: string = "¿Cómo llegar?";
+  directionsURL: string = "https://www.google.com/maps/dir/?api=1&destination=Paredes+de+Nava"
+
+
   constructor(angulartics2GoogleAnalytics: Angulartics2GoogleAnalytics) {
   }
 

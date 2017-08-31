@@ -4,3 +4,6 @@
 .social-button {
   min-width: 44px;
 }
+md-toolbar {
+  border-bottom: solid grey 1px;
+}
