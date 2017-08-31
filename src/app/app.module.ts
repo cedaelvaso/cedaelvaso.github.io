@@ -17,6 +17,7 @@ import {MainContainerComponent} from './shared/main-container/main-container.com
 import {Angulartics2GoogleAnalytics, Angulartics2Module} from "angulartics2";
 import {RouterModule} from "@angular/router";
 import {AngularFontAwesomeModule} from 'angular-font-awesome/angular-font-awesome';
+import { SocialComponent } from './social/social.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +28,8 @@ import {AngularFontAwesomeModule} from 'angular-font-awesome/angular-font-awesom
     DescriptionComponent,
     MapComponent,
     ToolbarComponent,
-    MainContainerComponent
+    MainContainerComponent,
+    SocialComponent
   ],
   imports: [
     BrowserModule,

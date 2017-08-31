@@ -1,7 +1,8 @@
 <!--The content below is only a placeholder and can be replaced.-->
-<app-toolbar></app-toolbar>
+<app-toolbar [title]="title" [socialList]="socialList"></app-toolbar>
 <app-main-container>
   <app-header [inConstruction]="inConstruction"></app-header>
+  <app-social [socialList]="socialList"></app-social>
   <app-description></app-description>
   <app-member-grid [memberList]="memberList"></app-member-grid>
   <app-map></app-map>

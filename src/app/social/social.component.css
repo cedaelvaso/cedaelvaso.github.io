@@ -1,8 +1,7 @@
-.app-main-container {
-  max-width: 960px;
+.social-grid {
+  max-width: 50%;
   padding-right: 15px;
   padding-left: 15px;
   margin-right: auto;
   margin-left: auto;
-  padding-top: 64px;
 }

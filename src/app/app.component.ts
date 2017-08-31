@@ -10,7 +10,7 @@ import {Angulartics2GoogleAnalytics} from "angulartics2";
 })
 export class AppComponent {
   title: String = 'Ceda el Vaso';
-  inConstruction: boolean = true;
+  inConstruction: boolean = false;
   memberList: Array<Member> = [
     new Member("Berto",
       'assets/img/profile-img/alberto-profile.jpg',
@@ -125,6 +125,11 @@ export class AppComponent {
         new Link("https://instagram.com/garciparedes", "Instagram"),
         new Link("https://twitter/garciparedes", "Twitter"),
       ]),
+  ];
+
+  socialList: Array<Link> = [
+    new Link("https://www.facebook.com/CedaElVasoPDN/", "Facebook"),
+    new Link("https://twitter.com/cedaelvaso8", "Twitter")
   ];
 
   constructor(angulartics2GoogleAnalytics: Angulartics2GoogleAnalytics) {

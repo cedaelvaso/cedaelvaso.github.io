@@ -1,0 +1,7 @@
+<md-grid-list class="social-grid" cols="2" rowHeight="72px">
+  <md-grid-tile *ngFor="let social of socialList">
+    <a md-fab href="{{social.url}}" target="_blank">
+      <fa name="{{social.iconId}}"></fa>
+    </a>
+  </md-grid-tile>
+</md-grid-list>

@@ -1,3 +1,5 @@
-app-main-container {
-
+app-toolbar {
+  position: fixed;
+  width: 100%;
+  z-index: 100;
 }
