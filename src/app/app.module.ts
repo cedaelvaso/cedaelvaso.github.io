@@ -17,9 +17,9 @@ import {MainContainerComponent} from './shared/main-container/main-container.com
 import {Angulartics2GoogleAnalytics, Angulartics2Module} from "angulartics2";
 import {RouterModule} from "@angular/router";
 import {AngularFontAwesomeModule} from 'angular-font-awesome/angular-font-awesome';
-import { SocialComponent } from './social/social.component';
-import { AgmCoreModule } from '@agm/core';
-import { FooterComponent } from './footer/footer.component';
+import {SocialComponent} from './social/social.component';
+import {AgmCoreModule} from '@agm/core';
+import {FooterComponent} from './footer/footer.component';
 import {AppService} from "./app.service";
 import {HttpModule} from "@angular/http";
 

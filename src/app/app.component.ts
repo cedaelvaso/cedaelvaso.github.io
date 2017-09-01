@@ -1,6 +1,4 @@
 import {Component} from '@angular/core';
-import {Member} from "./shared/member";
-import {Link} from "./shared/link";
 import {Angulartics2GoogleAnalytics} from "angulartics2";
 
 @Component({

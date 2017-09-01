@@ -8,7 +8,9 @@ import {Component, Input, OnInit} from '@angular/core';
 export class DescriptionComponent implements OnInit {
 
   @Input() description: String = "description works!";
-  constructor() { }
+
+  constructor() {
+  }
 
   ngOnInit() {
   }
