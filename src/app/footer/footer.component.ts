@@ -16,11 +16,11 @@ export class FooterComponent implements OnInit {
     this.author = _appService.author;
   }
 
-  ngOnInit() {
-  }
-
   get currentYear(): number {
     return new Date().getFullYear();
+  }
+
+  ngOnInit() {
   }
 
 }

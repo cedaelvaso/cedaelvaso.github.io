@@ -9,6 +9,11 @@
     {
       "url": "https://twitter.com/cedaelvaso8",
       "hint": "Twitter"
+    },
+    {
+      "url": "mailto:cedaelvaso@garciparedes.me",
+      "hint": "Mail",
+      "iconId": "envelope"
     }
   ],
   "maps": {

@@ -1,6 +1,6 @@
-import { async, ComponentFixture, TestBed } from '@angular/core/testing';
+import {async, ComponentFixture, TestBed} from '@angular/core/testing';
 
-import { MemberGridComponent } from './member-grid.component';
+import {MemberGridComponent} from './member-grid.component';
 
 describe('MemberGridComponent', () => {
   let component: MemberGridComponent;
@@ -8,9 +8,9 @@ describe('MemberGridComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ MemberGridComponent ]
+      declarations: [MemberGridComponent]
     })
-    .compileComponents();
+      .compileComponents();
   }));
 
   beforeEach(() => {

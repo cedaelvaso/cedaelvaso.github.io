@@ -1,4 +1,4 @@
-import {Component, Input, OnInit} from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 import {Observable} from "rxjs/Observable";
 import {Maps} from "../shared/maps";
 import {AppService} from "../app.service";
@@ -15,7 +15,6 @@ export class MapComponent implements OnInit {
   constructor(private _appService: AppService) {
     this.maps = this._appService.maps;
   }
-
 
 
   ngOnInit() {

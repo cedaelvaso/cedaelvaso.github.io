@@ -1,4 +1,4 @@
-import {Component, OnInit, Input} from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 import {AppService} from "../app.service";
 import {Observable} from "rxjs/Observable";
 
@@ -12,6 +12,7 @@ export class HeaderComponent implements OnInit {
   fullImagePath: string = 'assets/img/header.png';
 
   inConstruction: Observable<boolean>;
+
   constructor(private _appService: AppService) {
     this.inConstruction = this._appService.inConstruction
   }

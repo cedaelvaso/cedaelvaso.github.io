@@ -1,4 +1,4 @@
-import {Component, OnInit, Input, HostListener} from '@angular/core';
+import {Component, HostListener, OnInit} from '@angular/core';
 import {Member} from "../shared/member";
 import {Observable} from "rxjs/Observable";
 import {AppService} from "../app.service";
@@ -23,6 +23,18 @@ export class MemberGridComponent implements OnInit {
     return window.screen.width;
   }
 
+  private static get numColsByWidth(): number {
+    if (MemberGridComponent.widthScreen < 420) {
+      return 1;
+    } else if (MemberGridComponent.widthScreen < 690) {
+      return 2;
+    } else if (MemberGridComponent.widthScreen < 995) {
+      return 3;
+    } else {
+      return 4;
+    }
+  }
+
   ngOnInit() {
     this.updateGrid();
   }
@@ -35,19 +47,6 @@ export class MemberGridComponent implements OnInit {
   updateGrid() {
     this.numCols = MemberGridComponent.numColsByWidth;
     this.rowHeight = (Math.min(MemberGridComponent.widthScreen, 960) / this.numCols) + 140;
-  }
-
-
-  private static get numColsByWidth(): number {
-    if (MemberGridComponent.widthScreen < 426) {
-      return 1;
-    } else if (MemberGridComponent.widthScreen < 769) {
-      return 2;
-    } else if (MemberGridComponent.widthScreen < 993) {
-      return 3;
-    } else {
-      return 4;
-    }
   }
 
 
