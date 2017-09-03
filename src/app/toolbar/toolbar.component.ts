@@ -1,12 +1,12 @@
 import {Component, OnInit} from '@angular/core';
-import {Link} from "../shared/link";
-import {AppService} from "../app.service";
-import {Observable} from "rxjs/Observable";
+import {Link} from '../shared/link';
+import {AppService} from '../app.service';
+import {Observable} from 'rxjs/Observable';
 
 @Component({
   selector: 'app-toolbar',
   templateUrl: './toolbar.component.html',
-  styleUrls: ['./toolbar.component.scss']
+  styleUrls: ['./toolbar.component.scss'],
 })
 export class ToolbarComponent implements OnInit {
 

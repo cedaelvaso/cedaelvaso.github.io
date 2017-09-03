@@ -8,7 +8,7 @@ describe('MemberGridComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [MemberGridComponent]
+      declarations: [MemberGridComponent],
     })
       .compileComponents();
   }));

@@ -1,4 +1,4 @@
-import {Link} from "./link";
+import {Link} from './link';
 
 /**
  * Created by garciparedes on 10/08/2017.
@@ -23,7 +23,7 @@ export class Member {
       return this.linkList[0];
     } else {
       return this.linkList.find((link) =>
-        link.hint.toLowerCase() == this.defaultLinkHint.toLowerCase()
+        link.hint.toLowerCase() == this.defaultLinkHint.toLowerCase(),
       ) || this.linkList[0];
     }
   }

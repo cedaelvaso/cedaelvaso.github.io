@@ -1,10 +1,10 @@
 import {Injectable} from '@angular/core';
-import {Http, Response} from "@angular/http";
-import {Link} from "./shared/link";
-import {Member} from "./shared/member";
-import {Maps} from "./shared/maps";
+import {Http, Response} from '@angular/http';
+import {Link} from './shared/link';
+import {Member} from './shared/member';
+import {Maps} from './shared/maps';
 import {Author} from './shared/author';
-import {Observable} from "rxjs/Observable";
+import {Observable} from 'rxjs/Observable';
 import 'rxjs/add/operator/map';
 
 
@@ -46,13 +46,13 @@ export class AppService {
 
   get maps(): Observable<Maps> {
     return this.siteObservableJSON.map(site =>
-      new Maps(site.maps.lat, site.maps.lng, site.maps.mapsCardTitle, site.maps.directionsURL)
+      new Maps(site.maps.lat, site.maps.lng, site.maps.mapsCardTitle, site.maps.directionsURL),
     );
   }
 
   get author(): Observable<Author> {
     return this.siteObservableJSON.map(site =>
-      new Author(site.author.name, site.author.url)
+      new Author(site.author.name, site.author.url),
     );
   }
 

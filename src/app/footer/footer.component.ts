@@ -1,12 +1,12 @@
 import {Component, OnInit} from '@angular/core';
-import {Author} from "../shared/author";
-import {Observable} from "rxjs/Observable";
-import {AppService} from "../app.service";
+import {Author} from '../shared/author';
+import {Observable} from 'rxjs/Observable';
+import {AppService} from '../app.service';
 
 @Component({
   selector: 'app-footer',
   templateUrl: './footer.component.html',
-  styleUrls: ['./footer.component.scss']
+  styleUrls: ['./footer.component.scss'],
 })
 export class FooterComponent implements OnInit {
 

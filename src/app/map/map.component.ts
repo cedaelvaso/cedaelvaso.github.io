@@ -1,12 +1,12 @@
 import {Component, OnInit} from '@angular/core';
-import {Observable} from "rxjs/Observable";
-import {Maps} from "../shared/maps";
-import {AppService} from "../app.service";
+import {Observable} from 'rxjs/Observable';
+import {Maps} from '../shared/maps';
+import {AppService} from '../app.service';
 
 @Component({
   selector: 'app-map',
   templateUrl: './map.component.html',
-  styleUrls: ['./map.component.scss']
+  styleUrls: ['./map.component.scss'],
 })
 export class MapComponent implements OnInit {
 
