@@ -2,8 +2,22 @@
   <md-card-header>
     <md-card-title>Fotos</md-card-title>
   </md-card-header>
-  <md-card-content>
-
-
-  </md-card-content>
+  <div md-card-image>
+    <ngb-carousel>
+      <ng-template ngbSlide>
+        <img class="carousel-image" src="https://lorempixel.com/900/500?r=5" alt="Random second slide">
+        <div class="carousel-caption">
+          <h3>No keyboard...</h3>
+          <p>This carousel uses customized default values.</p>
+        </div>
+      </ng-template>
+      <ng-template ngbSlide>
+        <img class="carousel-image" src="https://lorempixel.com/900/500?r=6" alt="Random third slide">
+        <div class="carousel-caption">
+          <h3>And no wrap after last slide.</h3>
+          <p>This carousel uses customized default values.</p>
+        </div>
+      </ng-template>
+    </ngb-carousel>
+  </div>
 </md-card>

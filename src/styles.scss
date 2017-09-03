@@ -18,4 +18,9 @@ body {
   }
 
 }
+*,
+*::before,
+*::after {
+  box-sizing: unset; // 1
+}
 
