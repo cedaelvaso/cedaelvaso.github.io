@@ -1,4 +1,6 @@
 import {Component, Input, OnInit} from '@angular/core';
+import {AppService} from '../app.service';
+import {Observable} from 'rxjs/Observable';
 
 @Component({
   selector: 'app-description',
@@ -7,9 +9,12 @@ import {Component, Input, OnInit} from '@angular/core';
 })
 export class DescriptionComponent implements OnInit {
 
-  @Input() description: String = 'description works!';
+  description: Observable<string>;
+  cardTitle: Observable<string>;
 
-  constructor() {
+  constructor(private _appService: AppService) {
+    this.description = this._appService.description;
+    this.cardTitle = this._appService.descriptionCardTitle;
   }
 
   ngOnInit() {

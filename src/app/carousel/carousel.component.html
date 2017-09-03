@@ -1,0 +1,17 @@
+<md-card class="ultra-wide-card">
+  <md-card-header>
+    <md-card-title>{{cardTitle | async}}</md-card-title>
+  </md-card-header>
+  <div md-card-image>
+    <ngb-carousel>
+      <ng-template ngbSlide
+                   *ngFor="let carouselImage of carouselImageList | async">
+        <img class="carousel-image" src="{{carouselImage.imageURL}}" alt="Random second slide">
+        <div class="carousel-caption">
+          <h3>{{carouselImage.captionTitle}}</h3>
+          <p>{{carouselImage.captionSubTitle}}</p>
+        </div>
+      </ng-template>
+    </ngb-carousel>
+  </div>
+</md-card>

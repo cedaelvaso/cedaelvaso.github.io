@@ -1,0 +1,14 @@
+[
+  {
+    "imageURL": "assets/img/carousel-img/futbol-team.png",
+    "captionTitle":"Torneo Futbol 2017/18",
+    "captionSubTitle": "Foto de plantilla",
+    "date": "2017-09-02"
+  },
+  {
+    "imageURL": "assets/img/carousel-img/futbol-prize.png",
+    "captionTitle":"Torneo Futbol 2017/18",
+    "captionSubTitle": "Tercer premio",
+    "date": "2017-09-02"
+  }
+]

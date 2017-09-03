@@ -26,5 +26,7 @@
     "name": "garciparedes",
     "url": "https://garciparedes.me"
   },
-  "description": "description works!"
+  "description": "description works!",
+  "descriptionCardTitle": "¿Qué somos?",
+  "carouselCardTitle": "¿Qué hacemos?"
 }
