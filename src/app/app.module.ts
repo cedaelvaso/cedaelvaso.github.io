@@ -22,6 +22,8 @@ import {AgmCoreModule} from '@agm/core';
 import {FooterComponent} from './footer/footer.component';
 import {AppService} from './app.service';
 import {HttpModule} from '@angular/http';
+import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
+import {CarouselComponent} from './carousel/carousel.component';
 
 @NgModule({
   declarations: [
@@ -35,6 +37,7 @@ import {HttpModule} from '@angular/http';
     MainContainerComponent,
     SocialComponent,
     FooterComponent,
+    CarouselComponent,
   ],
   imports: [
     BrowserModule,
@@ -50,6 +53,7 @@ import {HttpModule} from '@angular/http';
     AgmCoreModule.forRoot({
       apiKey: 'AIzaSyCcHBzgvSOZPDzLtywbJ7anG9qwdHAft0U',
     }),
+    NgbModule.forRoot(),
   ],
   providers: [
     AppService,

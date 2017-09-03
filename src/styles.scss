@@ -12,4 +12,10 @@ body {
 .mat-card {
   color: white;
   background-color: $accent;
+
+  .mat-card-title {
+    font-size: 18px !important;
+  }
+
 }
+
