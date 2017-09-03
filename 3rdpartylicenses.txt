@@ -1,3 +1,5 @@
+@ng-bootstrap/ng-bootstrap@1.0.0-beta.3 MIT
+
 core-js@2.5.0 MIT
 Copyright (c) 2014-2016 Denis Pushkarev
 
