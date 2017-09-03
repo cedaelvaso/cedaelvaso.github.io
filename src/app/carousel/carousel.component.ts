@@ -1,5 +1,8 @@
 import {Component, OnInit} from '@angular/core';
 import {NgbCarouselConfig} from '@ng-bootstrap/ng-bootstrap';
+import {Observable} from 'rxjs/Observable';
+import {CarouselImage} from '../shared/carousel-image';
+import {AppService} from '../app.service';
 
 @Component({
   selector: 'app-carousel',
@@ -9,11 +12,17 @@ import {NgbCarouselConfig} from '@ng-bootstrap/ng-bootstrap';
 })
 export class CarouselComponent implements OnInit {
 
-  constructor(config: NgbCarouselConfig) {
-    config.interval = 3000;
-    config.wrap = true;
-    config.keyboard = false;
+  carouselImageList: Observable<Array<CarouselImage>>;
+  cardTitle: Observable<string>;
+  constructor(private _config: NgbCarouselConfig, private _appService: AppService) {
+    _config.interval = 3000;
+    _config.wrap = true;
+    _config.keyboard = false;
+    this.carouselImageList = this._appService.carouselImageList;
+    this.cardTitle = this._appService.carouselCardTitle;
   }
+
+
 
   ngOnInit() {
   }

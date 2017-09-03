@@ -1,21 +1,15 @@
 <md-card class="ultra-wide-card">
   <md-card-header>
-    <md-card-title>Fotos</md-card-title>
+    <md-card-title>{{cardTitle | async}}</md-card-title>
   </md-card-header>
   <div md-card-image>
     <ngb-carousel>
-      <ng-template ngbSlide>
-        <img class="carousel-image" src="https://lorempixel.com/900/500?r=5" alt="Random second slide">
+      <ng-template ngbSlide
+                   *ngFor="let carouselImage of carouselImageList | async">
+        <img class="carousel-image" src="{{carouselImage.imageURL}}" alt="Random second slide">
         <div class="carousel-caption">
-          <h3>No keyboard...</h3>
-          <p>This carousel uses customized default values.</p>
-        </div>
-      </ng-template>
-      <ng-template ngbSlide>
-        <img class="carousel-image" src="https://lorempixel.com/900/500?r=6" alt="Random third slide">
-        <div class="carousel-caption">
-          <h3>And no wrap after last slide.</h3>
-          <p>This carousel uses customized default values.</p>
+          <h3>{{carouselImage.captionTitle}}</h3>
+          <p>{{carouselImage.captionSubTitle}}</p>
         </div>
       </ng-template>
     </ngb-carousel>
